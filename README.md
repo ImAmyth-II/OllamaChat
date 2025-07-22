@@ -25,30 +25,48 @@ A modern, full-stack AI chat application built with Next.js and Ollama, featurin
 ### Installation
 
 1. **Clone the repository**
-
-   git clone https://github.com/ImAmyth-II/OllamaChat.git
-
-   cd OllamaChat
-
+```
+git clone https://github.com/ImAmyth-II/OllamaChat.git
+```
+```
+cd OllamaChat
+```
 2. **Database Setup**
    - Create a PostgreSQL database named `chatapp_db`
    - The application will connect using: `postgres://postgres:postp@ss@localhost:5432/chatapp_db`
 
 3. **Start Ollama Service**
+```
 ollama serve
-ollama pull gemma3:1b # The model used in your application
+```
+```
+ollama pull gemma3:1b
+```
+# The model used in your application
 
-4. **Install and Start Backend**
+5. **Install and Start Backend**
+```
 cd backend
+```
+```
 npm install
+```
+```
 npm start
+```
 
 *Note: The backend runs on **port 3001** and uses nodemon to watch for changes*
 
 5. **Install and Start Frontend**
+```
 cd frontend
+```
+```
 npm install
+```
+```
 npm run dev
+```
 
 *Note: The frontend runs on **port 3000***
 
