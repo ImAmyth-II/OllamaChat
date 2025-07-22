@@ -32,7 +32,7 @@ git clone https://github.com/ImAmyth-II/OllamaChat.git
 cd OllamaChat
 ```
 2. **Database Setup**
-   - Create a PostgreSQL database named `chatapp_db`
+   - Create a PostgreSQL database named `chatapp_db` using PgAdmin Application
    - The application will connect using: `postgres://postgres:postp@ss@localhost:5432/chatapp_db`
 
 3. **Start Ollama Service**
