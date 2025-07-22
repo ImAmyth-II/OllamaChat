@@ -31,11 +31,28 @@ git clone https://github.com/ImAmyth-II/OllamaChat.git
 ```
 cd OllamaChat
 ```
-2. **Database Setup**
-   - Create a PostgreSQL database named `chatapp_db` using PgAdmin Application
-   - The application will connect using: `postgres://postgres:postp@ss@localhost:5432/chatapp_db`
+### Database Setup
 
-3. **Start Ollama Service**
+2. **Setup PostgreSQL Server**
+   - Install PostgreSQL on your system
+   - During installation, set a password for the `postgres` user 
+   - **Default password used in this project**: `postp@ss`
+   - Take note of your password for later use
+
+3. **Create Database using pgAdmin**
+   - Open pgAdmin application
+   - Connect to your PostgreSQL server using the password you set
+   - Right-click on "Databases" → Create → Database
+   - Enter database name: `chatapp_db`
+   - Click "Save" to create the database
+
+4. **Database Connection**
+   - The application connects using: `postgres://postgres:postp@ss@localhost:5432/chatapp_db`
+   - **If you set a different password**: Update the connection string in `backend/db.js`
+
+**Note:** Replace `postp@ss` with your actual PostgreSQL password in `backend/db.js` if you used a different password during PostgreSQL installation.
+
+5. **Start Ollama Service**
 ```
 ollama serve
 ```
@@ -44,7 +61,7 @@ ollama pull gemma3:1b
 ```
 # The model used in your application
 
-5. **Install and Start Backend**
+6. **Install and Start Backend**
 ```
 cd backend
 ```
@@ -57,7 +74,7 @@ npm start
 
 *Note: The backend runs on **port 3001** and uses nodemon to watch for changes*
 
-5. **Install and Start Frontend**
+7. **Install and Start Frontend**
 ```
 cd frontend
 ```
@@ -70,7 +87,7 @@ npm run dev
 
 *Note: The frontend runs on **port 3000***
 
-6. **Open Application**
+8. **Open Application**
    - Navigate to `http://localhost:3000`
    - Start chatting with your AI assistant!
 
