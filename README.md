@@ -25,7 +25,7 @@ A modern, full-stack AI chat application built with Next.js and Ollama, featurin
 ### Installation
 
 1. **Clone the repository**
-git clone <your-repo-url>
+git clone https://github.com/ImAmyth-II/OllamaChat.git
 cd OllamaChat
 
 2. **Database Setup**
